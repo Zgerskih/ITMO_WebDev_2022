@@ -1,23 +1,80 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import { setupCounter } from './counter.js'
+import TodoVO from './src/model/vos/TodoVO.js';
+import { disableButtonWhenTextInvalid } from './src/model/utils/domUtils.js';
+import { isStringNotNumberAndNotEmpty } from './src/model/utils/StringUtils.js';
+import { localStorageListOf, localStorageSaveListOfWithKey } from './src/model/utils/databaseUtils.js';
+import TodoView from './src/wiew/TodoView.js';
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+const domInpTodoTitle = document.getElementById('inpTodoTitle');
+const domBtnCreateTodo = document.getElementById('btnCreateTodo');
+const domListOfTodos = document.getElementById('listOfTodos');
 
-setupCounter(document.querySelector('#counter'))
+domBtnCreateTodo.addEventListener('click', onBtnCreateTodoClick);
+domInpTodoTitle.addEventListener('keyup', onInpTodoTitleKeyup);
+domListOfTodos.addEventListener('change', onTodoListChange);
+
+const LOCAL_LIST_OF_TODOS = 'listOfTodos';
+const LOCAL_INPUT_VALUE = 'inputValue';
+
+const listOfTodos = localStorageListOf(LOCAL_LIST_OF_TODOS);
+domInpTodoTitle.value = localStorage.getItem(LOCAL_INPUT_VALUE);
+console.log('> Initial value -> listOfTodos', listOfTodos);
+
+renderTodoListInContainer(listOfTodos, domListOfTodos);
+disableOrEnableCreateTodoButtonOnTodoInputTitle();
+
+function onTodoListChange(event) {
+  console.log('> onTodoListChange -> event:', event);
+  const target = event.target;
+  const index = target.id;
+  if (index && typeof index === 'string') {
+    const indexInt = parseInt(index.trim());
+    if (isNaN(indexInt)) return;
+    const todoVO = listOfTodos[index];
+    console.log('> onTodoListChange -> todoVO:', todoVO);
+    console.log('> onTodoListChange -> index:', index);
+    todoVO.isCompleted = !!target.checked;
+    saveListOfTodo();
+  }
+}
+function onBtnCreateTodoClick() {
+  // console.log('> domBtnCreateTodo -> handle(click)', event);
+  const todoTitleValueFromDomInput = domInpTodoTitle.value;
+  // console.log('> domBtnCreateTodo -> todoInputTitleValue:', todoTitleValueFromDomInput);
+  if (isStringNotNumberAndNotEmpty(todoTitleValueFromDomInput)) {
+    createTodoFromTextAndAddToList(todoTitleValueFromDomInput);
+    saveListOfTodo();
+    renderTodoListInContainer(listOfTodos, domListOfTodos);
+    domInpTodoTitle.value = '';
+    localStorage.removeItem(LOCAL_INPUT_VALUE);
+    disableOrEnableCreateTodoButtonOnTodoInputTitle();
+  }
+}
+function onInpTodoTitleKeyup(event) {
+  // console.log('> onInpTodoTitleKeyup:', event);
+  localStorage.setItem(LOCAL_INPUT_VALUE, event.currentTarget.value);
+  disableOrEnableCreateTodoButtonOnTodoInputTitle();
+}
+function renderTodoListInContainer(listOfTodoVO, container) {
+  let output = '';
+  let todoVO;
+  for (let index in listOfTodoVO) {
+    todoVO = listOfTodoVO[index];
+    output += TodoView.createSimpleViewFromVO(index, todoVO);
+  }
+  container.innerHTML = output;
+}
+
+function disableOrEnableCreateTodoButtonOnTodoInputTitle() {
+  disableButtonWhenTextInvalid(domBtnCreateTodo, domInpTodoTitle.value, isStringNotNumberAndNotEmpty);
+}
+
+function createTodoFromTextAndAddToList(input) {
+  console.log('> createTodoFromTextAndAddToList: input =', input);
+  listOfTodos.push(TodoVO.createFromTitle(input));
+}
+
+function saveListOfTodo() {
+  console.log('> saveListOfTodo -> listOfTodos = ', listOfTodos);
+  localStorage.setItem(LOCAL_LIST_OF_TODOS, JSON.stringify(listOfTodos));
+  console.log('> saveListOfTodo -> saved: ', localStorage.getItem(LOCAL_LIST_OF_TODOS));
+}
