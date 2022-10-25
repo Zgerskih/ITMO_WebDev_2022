@@ -8,9 +8,13 @@ const domInput = document.getElementById('inpTodoTitle');
 const domBtnCreate = document.getElementById('btnCreateTodo');
 const domListOfTodos = document.getElementById('listOfTodos');
 
+let
+let
+
 domBtnCreate.addEventListener('click', onBtnCreateTodoClick);
 domInput.addEventListener('keyup', onInpTodoTitleKeyup);
 domListOfTodos.addEventListener('change', onTodoListChange);
+domListOfTodos.addEventListener('click', onTodoListClick);
 
 const LOCAL_LIST_OF_TODOS = 'listOfTodos';
 const LOCAL_INPUT_VALUE = 'inputValue';
@@ -21,6 +25,24 @@ console.log('> Initial value -> listOfTodos', listOfTodos);
 
 renderTodoListInContainer(listOfTodos, domListOfTodos);
 disableOrEnableCreateTodoButtonOnTodoInputTitle();
+
+function onTodoListClick(event) {
+  const domElement = event.target
+  const SELECTED_ITEM_KEY = 'lightgray';
+  const isSelected = domElement.style.background === SELECTED_ITEM_KEY
+  const todoId = domElement.id;
+  const todoVO = listOfTodos.find((vo:) => vo.id === todoId);                   //поиск find
+
+
+  console.log('>onTodoListClick click -> dataset:', event.target.dataset);
+  if (domElement.dataset['type'] !== TodoView.TODO_VIEW_ITEM) return;
+  if (isSelected) {
+    domElement.style.background = '';
+  } else {
+    dom
+    domElement.style.background = SELECTED_ITEM_KEY
+  }
+}
 
 function onTodoListChange(event) {
   console.log('> onTodoListChange -> event:', event);
