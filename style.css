@@ -30,6 +30,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: royalblue;
 }
 
 h1 {
@@ -94,4 +95,36 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+ .li{
+  padding: 4px 8px;
+  background: #535bf2;
+  border: 2px solid olivedrab;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between
+  }
+.li-active{
+  color: aqua;
+  text-decoration: line-through;
+  background: darkblue;
+}
+.li-active .btn {
+  color: aqua;
+  text-decoration: line-through;
+  background: darkblue;
+  }
+.wrap{
+  width: 300px;
+  margin: auto;
+}
+#inpTodoTitle{
+  width: 60%;
+}
+#btnCreateTodo {
+  width: 30%;
+}
+#listOfTodos{
+  margin-bottom: 50px;
+  .btn
 }
