@@ -1,15 +1,26 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <title>Parcel Sandbox</title>
-    <meta charset="UTF-8" />
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link href="/vite.svg" rel="icon" type="image/svg+xml" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Your Name</title>
+  <link type="text/css" rel="stylesheet" href="./style.css" />
+</head>
 
-  <body>
-    <div id="app"></div>
-    <input id="inpTodoTitle" />
-    <button id="btnCreateTodo">Create</button>
-    <li id="listOfTodos"></li>
-    <script type="module" src="main.js"></script>
-  </body>
+<body>
+<div id="app">
+  <strong>Your First name:</strong>
+  <input type="text" style="margin: 15px; background-color: chartreuse" class="inpFirstName" />
+  <br />
+  <strong>Your Last Name:</strong>
+  <input type="text" style="margin: 15px; background-color: rebeccapurple" class="inpLastName" /><br />
+  <div style="display: inline-block; margin-top: 15px">
+    <strong>Your Full Name:</strong>
+    <div class="FName" style="display: inline-block; font-family: 'Book Antiqua'; font-size: large"></div>
+    <div class="LName" style="display: inline-block; font-family: 'Book Antiqua'; font-size: large"></div>
+  </div>
+</div>
+<script type="module" src="Main.js"></script>
+</body>
 </html>
