@@ -8,8 +8,8 @@ const domInput = document.getElementById('inpTodoTitle');
 const domBtnCreate = document.getElementById('btnCreateTodo');
 const domListOfTodos = document.getElementById('listOfTodos');
 
-let
-let
+
+
 
 domBtnCreate.addEventListener('click', onBtnCreateTodoClick);
 domInput.addEventListener('keyup', onInpTodoTitleKeyup);
@@ -31,7 +31,7 @@ function onTodoListClick(event) {
   const SELECTED_ITEM_KEY = 'lightgray';
   const isSelected = domElement.style.background === SELECTED_ITEM_KEY
   const todoId = domElement.id;
-  const todoVO = listOfTodos.find((vo:) => vo.id === todoId);                   //поиск find
+  const todoVO = listOfTodos.find((vo) => vo.id === todoId);                   //поиск find
 
 
   console.log('>onTodoListClick click -> dataset:', event.target.dataset);
