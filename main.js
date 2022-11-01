@@ -56,7 +56,7 @@ class MoveRotateAlgorithm {
 const planetComposable = new PlanetComposable(
   new Position( 100, 100),
   new RenderCirclePlanetAlgorithm ('blue', 'lightblue', 50),
-  new MoveRotateAlgorithm(sun.position, 100, 10),
+  new MoveRotateAlgorithm(sun.position, 160, 0.03),
 );
 
 
@@ -65,7 +65,7 @@ function renderPlanets() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   planetComposable.render(ctx);
-
+  planetComposable.move()
 
 
 

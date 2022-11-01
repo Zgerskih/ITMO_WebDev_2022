@@ -33,7 +33,7 @@ export class Planet {
     }
     move() {
     if (this.moveAlgorithm) {
-      this.moveAlgorithm.move();
+      this.moveAlgorithm.move(this.position);
     }
   }
     render(ctx) {
