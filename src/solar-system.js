@@ -1,11 +1,20 @@
- class Planet {
+export class Position {
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+}
+
+export class Planet {
   constructor(color, atmosphere, position, size) {
+
     this.color = color;
     this.atmosphere = atmosphere;
     this.position = position;
     this.size = size;
   }
-  render(ctx) {
+
+   render(ctx) {
     ctx.fillStyle = this.color;
     ctx.beginPath();
     ctx.strokeStyle = this.atmosphere;
@@ -16,17 +25,30 @@
   }
 }
 
+  export class PlanetComposable {
+  constructor(position, renderAlgorithm, moveAlgorithm) {
+    this.position = position;
+    this.renderAlgorithm = renderAlgorithm;
+    this.moveAlgorithm = moveAlgorithm;
+    }
+    move() {
+    if (this.moveAlgorithm) {
+      this.moveAlgorithm.move();
+    }
+  }
+    render(ctx) {
+      if (this.renderAlgorithm){
+        this.renderAlgorithm.render(ctx, this.position);
+      }
+    }
+  }
+
+
 export class Sun extends Planet {
   constructor(position) {
     super('red', 'yellow', position, 100);
   }
 }
- export class Position {
-   constructor(x, y) {
-     this.x = x;
-     this.y = y;
-   }
- }
 
 export class RotatedPlanet extends Planet {
   center;
@@ -54,7 +76,7 @@ export class Earth extends RotatedPlanet {
     super.render(ctx);
     ctx.fillStyle = 'blue';
     ctx.beginPath();
-    ctx.arc(this.position.x - 10, this.position.y, this.size / 2, 0, 2 * Math.PI);
+    ctx.arc(this.position.x + 10, this.position.y, this.size / 2, 0, 2 * Math.PI);
     ctx.arc(this.position.x - 15, this.position.y, this.size / 2, 0, 2 * Math.PI);
     ctx.fill();
   }
