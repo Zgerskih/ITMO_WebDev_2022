@@ -92,7 +92,7 @@ export class Mars extends RotatedPlanet {
 
 export class Moon extends RotatedPlanet {
   constructor(center, radius) {
-    super('gray', 'palevioletred', 5, center, radius, -0.1);
+    super('gray', 'palevioletred', 5, center, radius, -0.9);
   }
   render(ctx) {
     super.render(ctx);
@@ -141,5 +141,17 @@ export class MoveRotateAlgorithm {
     position.x = this.radius * Math.sin(this.alpha) + offset.x;
     position.y = this.radius * Math.cos(this.alpha) + offset.y;
     if (this.alpha >= 2 * Math.PI) this.alpha = 0;
+  }
+}
+export class Egg extends RotatedPlanet {
+  constructor(center, radius) {
+    super('#69212c', 'palevioletred', 40, center, radius, 0.04);
+  }
+   render(ctx){
+    super.render(ctx);
+    ctx.fillStyle = '#0ff6f6';
+    ctx.beginPath();
+    ctx.arc(this.position.x - 5, this.position.y, this.size / 2, 0, 2 * Math.PI);
+    ctx.fill();
   }
 }
