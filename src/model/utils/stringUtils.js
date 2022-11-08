@@ -1,4 +1,7 @@
 function isStringNotNumberAndNotEmpty(value) {
+  if (value === null) throw new Error('New error');
+  if (value === undefined) throw new Error('New error');
+
   const isValueString = typeof value === 'string';
   const isValueNotNumber = isNaN(parseInt(value));
 
@@ -11,6 +14,4 @@ function isStringNotNumberAndNotEmpty(value) {
   });
   return result;
 }
-export {
-  isStringNotNumberAndNotEmpty
-}
+export { isStringNotNumberAndNotEmpty };

@@ -8,7 +8,7 @@ class TodoVO {
     this.id = id;
     this.title = title;
     this.data = date;
-    this.completed = false;
+    this.isComplited = false;
   }
 }
 export default TodoVO;
