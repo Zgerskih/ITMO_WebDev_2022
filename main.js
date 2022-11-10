@@ -1,7 +1,7 @@
 import TodoVO from './src/model/vos/TodoVO.js';
-import { disableButtonWhenTextInvalid } from './src/model/utils/domUtils.js';
-import { isStringNotNumberAndNotEmpty } from './src/model/utils/stringUtils.js';
-import { localStorageListOf, localStorageSaveListOfWithKey } from './src/model/utils/databaseUtils.js';
+import { disableButtonWhenTextInvalid } from '@/model/utils/domUtils.js';
+import { isStringNotNumberAndNotEmpty } from '@/model/utils/stringUtils.js';
+import { localStorageListOf, localStorageSaveListOfWithKey } from '@/model/utils/databaseUtils.js';
 import TodoView from './src/view/TodoView.js';
 
 const domInpTodoTitle = document.getElementById('inpTodoTitle');
@@ -11,7 +11,6 @@ const domListOfTodos = document.getElementById('listOfTodos');
 let selectedTodoVO = null;
 let selectedTodoViewItem = null;
 const hasSelectedTodo = () => !!selectedTodoVO;
-
 
 domBtnCreateTodo.addEventListener('click', onBtnCreateTodoClick);
 domInpTodoTitle.addEventListener('keyup', onInpTodoTitleKeyup);
@@ -36,13 +35,13 @@ function onTodoDomItemClicked(event) {
   const currentTodoVO = listOfTodos.find((vo) => vo.id === domElement.id);
   const isItemSelected = selectedTodoVO === currentTodoVO;
 
-    if (hasSelectedTodo) resetSelectedTodo();
+  if (hasSelectedTodo) resetSelectedTodo();
 
-    if (!isItemSelected) {
+  if (!isItemSelected) {
     selectedTodoVO = currentTodoVO;
     selectedTodoViewItem = domElement;
 
-    domBtnCreateTodo.innerText = 'Update'
+    domBtnCreateTodo.innerText = 'Update';
     domInpTodoTitle.value = currentTodoVO.title;
     selectedTodoViewItem.style.backgroundColor = 'red';
     onInpTodoTitleKeyup();
@@ -82,19 +81,15 @@ function onInpTodoTitleKeyup() {
   // console.log('> onInpTodoTitleKeyup:', event);
   const inputValue = domInpTodoTitle.value;
   // console.log('> onInpTodoTitleKeyup:', inputValue);
-  if (hasSelectedTodo()){
+  if (hasSelectedTodo()) {
     disableOrEnable_CreateTodoButtonOnTodoInputTitle(() => {
       return isStringNotNumberAndNotEmpty(inputValue) && selectedTodoVO.title !== inputValue;
     });
-  }
-  else
-  {
+  } else {
     localStorage.setItem(LOCAL_INPUT_TEXT, inputValue);
     disableOrEnable_CreateTodoButtonOnTodoInputTitle();
-    }
-
+  }
 }
-
 
 function render_TodoListInContainer(listOfTodoVO, container) {
   let output = '';
