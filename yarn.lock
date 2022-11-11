@@ -222,6 +222,18 @@
   "resolved" "https://registry.npmjs.org/at-least-node/-/at-least-node-1.0.0.tgz"
   "version" "1.0.0"
 
+"autoprefixer@^10.4.13":
+  "integrity" "sha512-49vKpMqcZYsJjwotvt4+h/BCjJVnhGwcLpDt5xkcaOG3eLrG/HUYLagrihYsQ+qrIBgIzX1Rw7a6L8I/ZA1Atg=="
+  "resolved" "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.13.tgz"
+  "version" "10.4.13"
+  dependencies:
+    "browserslist" "^4.21.4"
+    "caniuse-lite" "^1.0.30001426"
+    "fraction.js" "^4.2.0"
+    "normalize-range" "^0.1.2"
+    "picocolors" "^1.0.0"
+    "postcss-value-parser" "^4.2.0"
+
 "aws-sign2@~0.7.0":
   "integrity" "sha512-08kcGqnYf/YmjoRhfxyu+CLxBjUtHLXLXX/vUfx9l2LYzG3c1m61nrpyFUZI6zeS+Li/wWMMidD9KgrqtGq3mA=="
   "resolved" "https://registry.npmjs.org/aws-sign2/-/aws-sign2-0.7.0.tgz"
@@ -279,6 +291,16 @@
   dependencies:
     "fill-range" "^7.0.1"
 
+"browserslist@^4.21.4", "browserslist@>= 4.21.0":
+  "integrity" "sha512-CBHJJdDmgjl3daYjN5Cp5kbTf1mUhZoS+beLklHIvkOWscs83YAhLlF3Wsh/lciQYAcbBJgTOD44VtG31ZM4Hw=="
+  "resolved" "https://registry.npmjs.org/browserslist/-/browserslist-4.21.4.tgz"
+  "version" "4.21.4"
+  dependencies:
+    "caniuse-lite" "^1.0.30001400"
+    "electron-to-chromium" "^1.4.251"
+    "node-releases" "^2.0.6"
+    "update-browserslist-db" "^1.0.9"
+
 "buffer-crc32@~0.2.3":
   "integrity" "sha512-VO9Ht/+p3SN7SKWqcrgEzjGbRSJYTx+Q1pTQC0wrWqHx0vpJraQ6GtHx8tvcg1rlK1byhU5gccxgOgj7B0TDkQ=="
   "resolved" "https://registry.npmjs.org/buffer-crc32/-/buffer-crc32-0.2.13.tgz"
@@ -301,6 +323,11 @@
   "integrity" "sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA=="
   "resolved" "https://registry.npmjs.org/camelcase-css/-/camelcase-css-2.0.1.tgz"
   "version" "2.0.1"
+
+"caniuse-lite@^1.0.30001400", "caniuse-lite@^1.0.30001426":
+  "integrity" "sha512-zBUoFU0ZcxpvSt9IU66dXVT/3ctO1cy4y9cscs1szkPlcWb6pasYM144GqrUygUbT+k7cmUCW61cvskjcv0enQ=="
+  "resolved" "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001431.tgz"
+  "version" "1.0.30001431"
 
 "caseless@~0.12.0":
   "integrity" "sha512-4tYFyifaFfGacoiObjJegolkwSU4xQNGbVgUiNYVUxbQ2x2lUsFvY4hVgVzGiIe6WLOPqycWXA40l+PWsxthUw=="
@@ -563,6 +590,11 @@
     "jsbn" "~0.1.0"
     "safer-buffer" "^2.1.0"
 
+"electron-to-chromium@^1.4.251":
+  "integrity" "sha512-M8WEXFuKXMYMVr45fo8mq0wUrrJHheiKZf6BArTKk9ZBYCKJEOU5H8cdWgDT+qCVZf7Na4lVUaZsA+h6uA9+PA=="
+  "resolved" "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.284.tgz"
+  "version" "1.4.284"
+
 "emoji-regex@^8.0.0":
   "integrity" "sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A=="
   "resolved" "https://registry.npmjs.org/emoji-regex/-/emoji-regex-8.0.0.tgz"
@@ -614,6 +646,11 @@
     "esbuild-windows-32" "0.15.12"
     "esbuild-windows-64" "0.15.12"
     "esbuild-windows-arm64" "0.15.12"
+
+"escalade@^3.1.1":
+  "integrity" "sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw=="
+  "resolved" "https://registry.npmjs.org/escalade/-/escalade-3.1.1.tgz"
+  "version" "3.1.1"
 
 "escape-string-regexp@^1.0.5":
   "integrity" "sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg=="
@@ -720,6 +757,11 @@
     "asynckit" "^0.4.0"
     "combined-stream" "^1.0.6"
     "mime-types" "^2.1.12"
+
+"fraction.js@^4.2.0":
+  "integrity" "sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA=="
+  "resolved" "https://registry.npmjs.org/fraction.js/-/fraction.js-4.2.0.tgz"
+  "version" "4.2.0"
 
 "fs-extra@^9.1.0":
   "integrity" "sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ=="
@@ -1114,10 +1156,20 @@
   "resolved" "https://registry.npmjs.org/nanoid/-/nanoid-3.3.4.tgz"
   "version" "3.3.4"
 
+"node-releases@^2.0.6":
+  "integrity" "sha512-PiVXnNuFm5+iYkLBNeq5211hvO38y63T0i2KKh2KnUs3RpzJ+JtODFjkD8yjLwnDkTYF1eKXheUwdssR+NRZdg=="
+  "resolved" "https://registry.npmjs.org/node-releases/-/node-releases-2.0.6.tgz"
+  "version" "2.0.6"
+
 "normalize-path@^3.0.0", "normalize-path@~3.0.0":
   "integrity" "sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA=="
   "resolved" "https://registry.npmjs.org/normalize-path/-/normalize-path-3.0.0.tgz"
   "version" "3.0.0"
+
+"normalize-range@^0.1.2":
+  "integrity" "sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA=="
+  "resolved" "https://registry.npmjs.org/normalize-range/-/normalize-range-0.1.2.tgz"
+  "version" "0.1.2"
 
 "npm-run-path@^4.0.0":
   "integrity" "sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw=="
@@ -1246,10 +1298,10 @@
   "resolved" "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz"
   "version" "4.2.0"
 
-"postcss@^8.0.0", "postcss@^8.2.14", "postcss@^8.3.3", "postcss@^8.4.16", "postcss@^8.4.18", "postcss@>=8.0.9":
-  "integrity" "sha512-Wi8mWhncLJm11GATDaQKobXSNEYGUHeQLiQqDFG1qQ5UTDPTEvKw0Xt5NsTpktGTwLps3ByrWsBrG0rB8YQ9oA=="
-  "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.4.18.tgz"
-  "version" "8.4.18"
+"postcss@^8.0.0", "postcss@^8.1.0", "postcss@^8.2.14", "postcss@^8.3.3", "postcss@^8.4.16", "postcss@^8.4.18", "postcss@^8.4.19", "postcss@>=8.0.9":
+  "integrity" "sha512-h+pbPsyhlYj6N2ozBmHhHrs9DzGmbaarbLvWipMRO7RLS+v4onj26MPFXA5OBYFxyqYhUJK456SwDcY9H2/zsA=="
+  "resolved" "https://registry.npmjs.org/postcss/-/postcss-8.4.19.tgz"
+  "version" "8.4.19"
   dependencies:
     "nanoid" "^3.3.4"
     "picocolors" "^1.0.0"
@@ -1629,6 +1681,14 @@
   "integrity" "sha512-KK8xQ1mkzZeg9inewmFVDNkg3l5LUhoq9kN6iWYB/CC9YMG8HA+c1Q8HwDe6dEX7kErrEVNVBO3fWsVq5iDgtw=="
   "resolved" "https://registry.npmjs.org/untildify/-/untildify-4.0.0.tgz"
   "version" "4.0.0"
+
+"update-browserslist-db@^1.0.9":
+  "integrity" "sha512-OztqDenkfFkbSG+tRxBeAnCVPckDBcvibKd35yDONx6OU8N7sqgwc7rCbkJ/WcYtVRZ4ba68d6byhC21GFh7sQ=="
+  "resolved" "https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.0.10.tgz"
+  "version" "1.0.10"
+  dependencies:
+    "escalade" "^3.1.1"
+    "picocolors" "^1.0.0"
 
 "util-deprecate@^1.0.2":
   "integrity" "sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw=="

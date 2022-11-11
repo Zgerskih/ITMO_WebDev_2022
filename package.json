@@ -11,7 +11,9 @@
   },
   "devDependencies": {
     "@vitest/ui": "^0.25.1",
+    "autoprefixer": "^10.4.13",
     "cypress": "^10.11.0",
+    "postcss": "^8.4.19",
     "prettier": "^2.7.1",
     "tailwindcss": "^3.2.3",
     "vite": "^3.1.0",
