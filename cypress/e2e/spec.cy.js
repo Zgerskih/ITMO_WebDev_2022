@@ -30,4 +30,11 @@ describe('empty spec', () => {
     cy.get('#btnCreateTodo').click();
     cy.get('#listOfTodos').should('contain.text', TEST_TODO_TEXT);
   });
+  it('create todo and validate selection rules', () => {
+    ['Todo1', 'Todo2'].forEach((text)=> {
+      cy.get('#inpTodoTitle').type(text);
+      cy.get('#btnCreateTodo').click();
+    });
+    const t
+  });
 });
