@@ -3,10 +3,14 @@ import { disableButtonWhenTextInvalid } from '@/model/utils/domUtils.js';
 import { isStringNotNumberAndNotEmpty } from '@/model/utils/stringUtils.js';
 import { localStorageListOf, localStorageSaveListOfWithKey } from '@/model/utils/databaseUtils.js';
 import TodoView from './src/view/TodoView.js';
+import ServerService from '@/services/ServerService.js';
 
-const domInpTodoTitle = document.getElementById('inpTodoTitle');
-const domBtnCreateTodo = document.getElementById('btnCreateTodo');
-const domListOfTodos = document.getElementById('listOfTodos');
+const did = document.getElementById.bind(document);  // без bind не работает!!!!
+
+
+const domInpTodoTitle = did('inpTodoTitle');
+const domBtnCreateTodo = did('btnCreateTodo');
+const domListOfTodos = did('listOfTodos');
 
 let selectedTodoVO = null;
 let selectedTodoViewItem = null;
@@ -17,45 +21,37 @@ console.log = (...args) => {
   if (import.meta.env.DEV) debug(args);
 };
 
+const LOCAL_LIST_OF_TODOS = 'listOfTodos';
+const LOCAL_INPUT_TEXT = 'inputText';
+
+let listOfTodos = [];
+
+const serverService = new ServerService(import.meta.env.VITE_DATA_SERVER);
+
+serverService.requestTodos().then((todoList) => {
+
+  listOfTodos = todoList;
+  domInpTodoTitle.value = localStorage.getItem(LOCAL_INPUT_TEXT);
+  render_TodoListInContainer(listOfTodos, domListOfTodos);
+  disableOrEnable_CreateTodoButtonOnTodoInputTitle();
+
+  did('app').style.visibility = 'visible';
+
+});
+
 domBtnCreateTodo.addEventListener('click', onBtnCreateTodoClick);
 domInpTodoTitle.addEventListener('keyup', onInpTodoTitleKeyup);
 domListOfTodos.addEventListener('change', onTodoListChange);
 domListOfTodos.addEventListener('click', onTodoDomItemClicked);
 
-const LOCAL_LIST_OF_TODOS = 'listOfTodos';
-const LOCAL_INPUT_TEXT = 'inputText';
 
-const listOfTodos = localStorageListOf(LOCAL_LIST_OF_TODOS);
+
 
 console.log('> Initial value -> listOfTodos', listOfTodos);
 
-domInpTodoTitle.value = localStorage.getItem(LOCAL_INPUT_TEXT);
-render_TodoListInContainer(listOfTodos, domListOfTodos);
-disableOrEnable_CreateTodoButtonOnTodoInputTitle();
 
-const delay = (time) =>
-  new Promise((resolve, reject) => {
-    // console.log('Promise created');
-    setTimeout(() => {
-      console.log('> delay -> setTimeout: ready');
-      resolve(123);
-    }, time);
-  });
-//   .then(() => {
-//     console.log('Promise then 1');
-//   })
-//   .then(() => {                                  // выполнить когда resolved
-//     console.log('Promise then 2');
-//   })
-//   .catch(() => {                                 // выполнить когда reject
-//     console.log('Promise catch 1');
-//   })
-//   .finally(() => {                               // выполнить в любом  случае
-//     console.log('Promise finally 1');
-//   });
-// delay.then(() => {
-//   console.log('Promise then 3');
-// });
+
+
 
 function onTodoDomItemClicked(event) {
   const domElement = event.target;
