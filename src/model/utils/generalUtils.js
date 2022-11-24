@@ -7,7 +7,7 @@ const delay = (time) =>
     }, time);
   });
 
-const did = document.getElementById.bind(document);     // без bind не работает!!!!
+const $ = document.getElementById.bind(document);     // без bind не работает!!!!
 
 const WrapDevOnlyConsoleLog = () => {
   const debug = console.log;
@@ -30,5 +30,5 @@ const WrapDevOnlyConsoleLog = () => {
 // delay.then(() => {
 //   console.log('Promise then 3');
 // });
-export {delay, WrapDevOnlyConsoleLog, did};
+export {delay, WrapDevOnlyConsoleLog, $};
 
