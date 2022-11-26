@@ -9,10 +9,10 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
+       },
     },
-    server: {
-      port: 8089, // cors: true,    // host: 'local.dev',    // https: true,
-      host: '127.0.0.1',
-    },
-  }
-})
+  server: {
+    port: 8089, // cors: true,    // host: 'local.dev',    // https: true,
+    host: '127.0.0.1',
+  },
+});
