@@ -1,28 +1,27 @@
 {
-  "name": "itmo-webdev-2022",
-  "private": true,
+  "name": "vue-lessons",
   "version": "0.0.0",
-  "type": "module",
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "vitestui": "vitest --ui",
-    "server:simple": "simple-server dist 3000",
-    "server:json": "json-server --watch db.json --port 3003 --static dist"
-
+    "test:unit": "vitest --environment jsdom --root src/",
+    "test:e2e": "start-server-and-test preview :4173 'cypress run --e2e'",
+    "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' :4173 'cypress open --e2e'"
+  },
+  "dependencies": {
+    "pinia": "^2.0.26",
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
-    "@vitest/ui": "^0.25.1",
-    "cypress": "^10.11.0",
-    "json-server": "^0.17.1",
-    "prettier": "^2.7.1",
-    "vite": "^3.1.0",
-    "vite-plugin-remove-console": "^1.3.0",
-    "vitest": "^0.25.1"
-  },
-  "prettier": {
-    "printWidth": 120,
-    "singleQuote": true
+    "@vitejs/plugin-vue": "^3.2.0",
+    "@vue/test-utils": "^2.2.4",
+    "cypress": "^11.2.0",
+    "jsdom": "^20.0.3",
+    "start-server-and-test": "^1.14.0",
+    "vite": "^3.2.4",
+    "vitest": "^0.25.3"
   }
 }
