@@ -12,6 +12,7 @@
   <button v-on:click="onPlus">+</button>
   <button v-if="canRenderMinusButton" @click="onMinus">-</button>
 </template>
+
 <script>
 import CounterValue from './components/CounterValue.vue';
 
