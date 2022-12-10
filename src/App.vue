@@ -8,6 +8,9 @@ import Routes from '@/const/Routes';
 const todoStore = useTodosStore();
 const { numberOfTodos } = storeToRefs(todoStore);
 
+const RouterHome = Routes.HOME;
+const RouterCounter = Routes.COUNTER;
+
 const router = useRouter();
 
 const isCurrentRouteIndex = () => {
@@ -21,19 +24,19 @@ const canRenderNumberOfTodos = ref(isCurrentRouteIndex());
 </script>
 <template>
   <header>
-    <img alt="Vue logo" className="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
     <div v-if="canRenderNumberOfTodos">Todos created: {{ numberOfTodos }}</div>
     <div>Current route: {{ $route.path }}</div>
-    <div className="wrapper">
+    <div class="wrapper">
       <nav>
-        <RouterLink :to="Routes.HOME">home</RouterLink>
-        <RouterLink :to="Routes.COUNTER">counter</RouterLink>
+        <RouterLink :to="RouterHome">Todos</RouterLink>
+        <RouterLink :to="RouterCounter">Counter</RouterLink>
       </nav>
     </div>
   </header>
   <main>
     <RouterView v-slot="{ Component }">
-      <KeepAlive>
+      <KeepAlive exclude="TodoItemView">
         <component :is="Component" />
       </KeepAlive>
     </RouterView>
@@ -49,6 +52,9 @@ header {
 .logo {
   display: block;
   margin: 0 auto 2rem;
+}
+header .wrapper {
+  margin: 2rem 0;
 }
 
 nav {
