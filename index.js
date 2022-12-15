@@ -11,6 +11,7 @@ const fs = require('node:fs/promises');
 //   console.log(`counter ${++count}`);
 //   if (count > 10) clearInterval(intervalId);
 // }
+app.use('/site', express.static('public'))
 
 // const intervalId = setInterval(func, 1000);
 
