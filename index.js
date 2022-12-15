@@ -58,9 +58,18 @@ app.get('/users/:id', (req, res) => {
 
 
 app.listen(process.env.PORT || 3000, async () => {
-  db = JSON.parse(await fs.readFile('./db.json', 'utf8'));
-  console.log(`Example app listening on port ${process.env.PORT}`, db)
+  try {
+    db = JSON.parse(await fs.readFile('./db.json', 'utf8'));
+  } catch (e) {
+    db = {
+      users: []
+    };
+    saveDB();
+  }
 });
+async function saveDB() {
+  await fs.writeFile('./db.json', JSON.stringify(db));
+}
 
 
 // process.on("exit", () =>{
