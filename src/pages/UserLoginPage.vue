@@ -1,6 +1,6 @@
 <script setup lang="ts"></script>
 
 <template>
-  <RouterView></RouterView>
+  <h1>Login</h1>
 </template>
 <style scoped></style>
