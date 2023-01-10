@@ -1,7 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+</script>
 
 <template>
-  <h1>Books List</h1>
+  <h1>Index Page</h1>
 </template>
 
 <style scoped></style>
