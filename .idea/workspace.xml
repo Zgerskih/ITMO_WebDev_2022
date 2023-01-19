@@ -5,18 +5,132 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84845ae0-3244-49e1-8cd5-43d94960a4f1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@esbuild/win32-x64/esbuild.exe" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@esbuild/win32-x64/esbuild.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@esbuild/win32-x64/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@esbuild/win32-x64/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/language-core/out/documentRegistry.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/language-core/out/documentRegistry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/language-core/out/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/language-core/out/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/language-core/out/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/language-core/out/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/language-core/out/languageContext.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/language-core/out/languageContext.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/language-core/out/languageContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/language-core/out/languageContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/language-core/out/sourceMaps.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/language-core/out/sourceMaps.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/language-core/out/sourceMaps.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/language-core/out/sourceMaps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/language-core/out/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/language-core/out/types.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/language-core/out/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/language-core/out/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/language-core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/language-core/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/source-map/out/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/source-map/out/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/source-map/out/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/source-map/out/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/source-map/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/source-map/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/typescript/out/getProgram.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/typescript/out/getProgram.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/typescript/out/getProgram.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/typescript/out/getProgram.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/typescript/out/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/typescript/out/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/typescript/out/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/typescript/out/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/typescript/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/typescript/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/generators/script.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/generators/script.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/generators/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/generators/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/generators/template.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/generators/template.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/generators/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/generators/template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/languageModule.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/languageModule.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/languageModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/languageModule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/parsers/scriptRanges.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/parsers/scriptRanges.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/parsers/scriptSetupConvertRanges.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/parsers/scriptSetupConvertRanges.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/parsers/scriptSetupConvertRanges.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/parsers/scriptSetupConvertRanges.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/parsers/scriptSetupRanges.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/parsers/scriptSetupRanges.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/parsers/scriptSetupRanges.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/parsers/scriptSetupRanges.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/plugins.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/plugins.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/plugins/file-md.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/plugins/file-md.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/plugins/vue-sfc-customblocks.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/plugins/vue-sfc-customblocks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/plugins/vue-sfc-scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/plugins/vue-sfc-scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/plugins/vue-sfc-styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/plugins/vue-sfc-styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/plugins/vue-sfc-template.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/plugins/vue-sfc-template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/plugins/vue-template-html.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/plugins/vue-template-html.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/plugins/vue-tsx.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/plugins/vue-tsx.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/plugins/vue-tsx.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/plugins/vue-tsx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/sourceFile.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/sourceFile.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/sourceFile.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/sourceFile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/types.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/utils/localTypes.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/utils/localTypes.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/utils/localTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/utils/localTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/utils/transform.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/utils/transform.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/utils/ts.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/utils/ts.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/utils/ts.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/out/utils/ts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-language-core/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-typescript/out/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-typescript/out/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-typescript/out/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-typescript/out/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@volar/vue-typescript/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@volar/vue-typescript/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/brace-expansion/.github/FUNDING.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/brace-expansion/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/brace-expansion/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/brace-expansion/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/brace-expansion/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/brace-expansion/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/brace-expansion/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/esbuild/bin/esbuild" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/esbuild/bin/esbuild" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/esbuild/install.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/esbuild/install.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/esbuild/lib/main.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/esbuild/lib/main.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/esbuild/lib/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/esbuild/lib/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/esbuild/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/esbuild/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/is-core-module/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/is-core-module/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/is-core-module/core.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/is-core-module/core.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/is-core-module/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/is-core-module/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/minimatch/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/minimatch/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/minimatch/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/minimatch/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/minimatch/lib/path.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/minimatch/minimatch.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/minimatch/minimatch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/minimatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/minimatch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/input.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/input.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/input.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/lib/processor.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/lib/processor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/postcss/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/postcss/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/bin/rollup" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/bin/rollup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/es/rollup.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/es/rollup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/es/shared/rollup.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/es/shared/rollup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/es/shared/watch.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/es/shared/watch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/loadConfigFile.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/loadConfigFile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/rollup.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/rollup.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/rollup.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/rollup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/shared/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/shared/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/shared/loadConfigFile.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/shared/loadConfigFile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/shared/rollup.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/shared/rollup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/shared/watch-cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/shared/watch-cli.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/dist/shared/watch.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/dist/shared/watch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rollup/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rollup/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node-cjs/publicUtils.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/dist/node-cjs/publicUtils.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/chunks/dep-0bae2027.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/chunks/dep-80491704.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/dist/node/cli.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/dist/node/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/dist/node/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vue-tsc/out/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vue-tsc/out/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vue-tsc/out/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vue-tsc/out/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vue-tsc/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vue-tsc/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.env.example" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HelloWorld.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RegistrationForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RegistrationForm.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/consts/Routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/consts/Routes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/BooksPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BooksPage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/IndexPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/IndexPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/UserLoginPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/UserLoginPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/LoginPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LoginPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/RegisterPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RegisterPage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vite-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/vite-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.node.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.node.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,26 +161,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.18.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.18.0&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/ITMO_WebDev_2022/src/components&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\ITMO_WebDev_2022\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\ITMO_WebDev_2022\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "16.18.0",
+    "javascript.nodejs.core.library.typings.version": "16.18.0",
+    "last_opened_file_path": "C:/Product_list2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "C:\\ITMO_WebDev_2022\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\ITMO_WebDev_2022\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\ITMO_WebDev_2022\src\components" />
@@ -76,8 +190,8 @@
       <recent name="C:\ITMO_WebDev_2022\src\stores" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\ITMO_WebDev_2022\public" />
       <recent name="C:\ITMO_WebDev_2022" />
+      <recent name="C:\ITMO_WebDev_2022\public" />
       <recent name="C:\ITMO_WebDev_2022\src" />
     </key>
   </component>
@@ -129,7 +243,9 @@
       <workItem from="1671261172169" duration="1375000" />
       <workItem from="1671867113423" duration="8982000" />
       <workItem from="1673365335198" duration="363000" />
-      <workItem from="1673365722748" duration="1539000" />
+      <workItem from="1673365722748" duration="3815000" />
+      <workItem from="1674141294256" duration="729000" />
+      <workItem from="1674145016372" duration="5643000" />
     </task>
     <servers />
   </component>
